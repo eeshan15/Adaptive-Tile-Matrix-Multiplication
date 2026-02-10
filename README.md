@@ -24,6 +24,7 @@ The agent selects from a discrete action space :
 
 * **Action 0 (Static):** Invokes a CUDA kernel with hardcoded tile sizes for optimized performance on specific scales.
 * **Action 1 (Dynamic):** Invokes a templated CUDA kernel where the tile size is passed at runtime, offering higher flexibility.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/686f009e-a635-4268-910b-9c789b52db1b" />
 
 
 
@@ -86,7 +87,8 @@ Experimental data confirms that the RL agent successfully learns optimal tiling 
 
 * **Learning Progression:** Episode rewards improved from approximately **-5.6750 ms** in early stages to **-1.0021 ms** by episode 5000.
 * **Decision Trends:** The agent favors static kernels for small matrices () and transitions to dynamic tiling for medium-to-large workloads to maximize throughput.
-
+<img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/426171c1-5f79-4bbd-ae72-19197cb3ecc5" />
+<img width="1000" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/2244c343-47dc-4b13-9ad0-bc0f5364721e" />
 
 
 ---
