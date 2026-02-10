@@ -4,6 +4,7 @@
 ## Overview
 
 Matrix multiplication is a critical operation in high-performance computing and deep learning. This project implements a Reinforcement Learning (RL) framework to dynamically optimize tile sizes for CUDA kernels. By leveraging Q-learning, the system adaptively chooses between static and dynamic tiled kernel implementations based on observed performance metrics, allowing for automated performance tuning without extensive manual intervention.
+![Tiled_matrix_multiplication](https://github.com/user-attachments/assets/1076d1fc-09bd-4050-a810-1b3cc1a835d6)
 
 ---
 
@@ -84,8 +85,7 @@ python plot_q_table.py
 Experimental data confirms that the RL agent successfully learns optimal tiling strategies.
 
 * **Learning Progression:** Episode rewards improved from approximately **-5.6750 ms** in early stages to **-1.0021 ms** by episode 5000.
-* 
-**Decision Trends:** The agent favors static kernels for small matrices () and transitions to dynamic tiling for medium-to-large workloads to maximize throughput.
+* **Decision Trends:** The agent favors static kernels for small matrices () and transitions to dynamic tiling for medium-to-large workloads to maximize throughput.
 
 
 
