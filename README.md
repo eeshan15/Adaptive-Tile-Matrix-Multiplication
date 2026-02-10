@@ -21,12 +21,8 @@ The state  at any given time step  is defined as a tuple of the input matrix siz
 
 The agent selects from a discrete action space :
 
-* 
-**Action 0 (Static):** Invokes a CUDA kernel with hardcoded tile sizes for optimized performance on specific scales.
-
-
-* 
-**Action 1 (Dynamic):** Invokes a templated CUDA kernel where the tile size is passed at runtime, offering higher flexibility.
+* **Action 0 (Static):** Invokes a CUDA kernel with hardcoded tile sizes for optimized performance on specific scales.
+* **Action 1 (Dynamic):** Invokes a templated CUDA kernel where the tile size is passed at runtime, offering higher flexibility.
 
 
 
@@ -46,10 +42,7 @@ Training is conducted for 5,000 episodes using an -greedy policy.
 
 ## System Requirements
 
-* 
-**Hardware:** NVIDIA GPU (e.g., RTX 3050 4GB).
-
-
+* **Hardware:** NVIDIA GPU (e.g., RTX 3050 4GB).
 * **Software:** CUDA Toolkit v12.6, Python 3.13.
 * **Python Libraries:** `numpy`, `pandas`, `matplotlib`, `seaborn`, `tqdm`.
 
